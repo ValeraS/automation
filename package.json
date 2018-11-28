@@ -15,8 +15,14 @@
     "travis-ci": "^2.2.0",
     "util": "^0.11.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^5.9.0",
+    "eslint-config-freecodecamp": "^1.1.1",
+    "prettier": "^1.15.2"
+  },
   "scripts": {
+    "format": "prettier --write es5 './**/*.{js,json}' && npm run lint",
+    "lint": "eslint ./**/*.js --fix",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
